@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: #e8dfa5;
+  color:  #735a2c;
+  font-size: 20px;
+  padding: 38px;
+  font-family: 'Gochi Hand', cursive;
+}
+
+.seedImage {
+  width: 5%;
+  height: auto;
+  border: 5px solid #735a2c;
+  transition: 0.5s
+}
+.seedImage {border-radius: 10px;}
+.seedImage:hover
+{
+  width: 7%;
+  height: auto;
+  border: 5px solid #8fe675;
+}
+
+
+.seedlingImage {
+  width: 7%;
+  height: auto;
+  border: 5px solid #735a2c;
+  transition: 0.5s;
+}
+.seedlingImage {border-radius: 10px;}
+.seedlingImage:hover
+{
+  width: 9%;
+  height: auto;
+  border: 5px solid #8fe675;
+}
+
+
+.saplingImage {
+  width: 11%;
+  height: auto;
+  border: 5px solid #735a2c;
+  transition: 0.5s;
+}
+.saplingImage {border-radius: 10px;}
+.saplingImage:hover
+{
+  width: 13%;
+  height: auto;
+  border: 5px solid #8fe675;
+}
+
+
+.treeImage {
+  width: 23%;
+  height: auto;
+  border: 5px solid #735a2c;
+  transition: 0.5s;
+}
+.treeImage {border-radius: 10px;}
+.treeImage:hover
+{
+  width: 25%;
+  height: auto;
+  border: 5px solid #8fe675;
+}
+
+
+.blossomImage {
+  width: 23%;
+  height: auto;
+  border: 5px solid #735a2c;
+  transition: 0.5s;
+}
+.blossomImage {border-radius: 10px;}
+.blossomImage:hover
+{
+  width: 25%;
+  height: auto;
+  border: 5px solid #8fe675;
+}
+
+
+.applesImage {
+  width: 23%;
+  height: auto;
+  border: 5px solid #735a2c;
+  transition: 0.5s;
+}
+.applesImage {border-radius: 10px;}
+.applesImage:hover
+{
+  width: 25%;
+  height: auto;
+  border: 5px solid #8fe675;
+}
+
+.Button {
+  background-color: #8fe675;
+  font-family: 'Gochi Hand', cursive;
+}
+.Button {border-radius: 10px;}

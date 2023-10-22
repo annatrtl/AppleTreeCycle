@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class = "mainTitle"> <span style="color: #87261f">Apple Tree Cycle</span></h1>
+  <p> Learn about the apple tree cycle! </p>
+  <img src="images/seeds.jpg" class="seedImage">
+  <img src="images/seedling.jpg" class="seedlingImage">
+  <img src="images/sapling.jpg" class="saplingImage">
+  <img src="images/tree.jpg" class="treeImage">
+  <img src="images/blossom.jpg" class="blossomImage">
+  <img src="images/apples.jpg" class="applesImage">
+
+  <p id="p1" >Hover over the images!</p>
+  <script>
+    const element1 = document.querySelector('.seedImage');
+    const style1 = getComputedStyle(element1);
+    const element2 = document.querySelector('.seedlingImage');
+    const style2 = getComputedStyle(element2);
+    const element3 = document.querySelector('.saplingImage');
+    const style3 = getComputedStyle(element3);
+    const element4 = document.querySelector('.treeImage');
+    const style4 = getComputedStyle(element4);
+    const element5 = document.querySelector('.blossomImage');
+    const style5 = getComputedStyle(element5);
+    const element6 = document.querySelector('.applesImage');
+    const style6 = getComputedStyle(element6);
+    setInterval(function() {
+      const w1 = style1.width;
+      const w2 = style2.width;
+      const w3 = style3.width;
+      const w4 = style4.width;
+      const w5 = style5.width;
+      const w6 = style6.width;
+      if (w1 == "38.117px")
+      {
+        document.getElementById("p1").innerHTML = "The first stage of the apple tree cycle is the seed stage. A seed is a pod that the plant produces from which a new plant can grow.";
+      }
+      else if (w2 == "49.0296px") 
+      {
+        document.getElementById("p1").innerHTML = "The second stage is the sapling stage. It takes about two weeks for an apple seed to sprout into a seedling. A seedling is a young plant grown from the seed, and it needs water, sunlight, and nutritious soil to grow.";
+      }
+      else if (w3 == "70.8163px") 
+      {
+        document.getElementById("p1").innerHTML = "The sapling stage is the third stage, and the one right before the plant becomes a tree. It is when the plant reaches 3 feet of height. Apple trees reach this stage around the first or second year of growth.";
+      }
+      else if (w4 == "136.196px") 
+      {
+        document.getElementById("p1").innerHTML = "The tree becomes fully grown at the forth stage, however it has not begun to produce blossoms yet. ";
+      }
+      else if (w5 == "136.196px") 
+      {
+        document.getElementById("p1").innerHTML = "The fifth stage is when the apple tree begins to blossom. Blossoms are flowers the tree produces from which apples will grow. Depending on the type, apple trees can start blooming anywhere from 2 to 8 years after being planted.";
+      }
+      else if (w6 == "136.196px") 
+      {
+        document.getElementById("p1").innerHTML = "The final stage is when the tree begins to grow apples. Apple trees can bear fruit anywhere from 3 to 10 years after being planted. The apples themselves contain seeds which can be used to plant a new tree!";
+      }
+      else 
+      {
+        document.getElementById("p1").innerHTML = "Hover over the images!";
+      }
+    }, 400);
+
+  
+  </script>
+
+  <form>
+  <label>
+    What is one thing that a plant needs to grow? (in lowercase) 
+    <input type="text" id="Answer"/>
+  </label>
+  <button type="submit" class = "Button" onclick="getVal()" id = "Submit" > Submit </button>
+
+  <p id="Results" >.....</p>
+  </form>
+  
+  <script>
+  function getVal()
+  {
+    event.preventDefault()
+    document.getElementById("Results").innerHTML = ":)";
+    var answer = document.getElementById("Answer").value;
+    if (answer == "water" || answer == "sunlight" || answer == "sun" || answer == "soil" || answer == "nutritious soil" || answer == "cold" || answer == "cold temperature")
+    {
+      document.getElementById("Results").innerHTML = "Correct!";
+      document.getElementById("Submit").style.display = none;
+    }
+    else 
+    {
+      document.getElementById("Results").innerHTML = "Not quite, try again.";
+      document.getElementById("Submit").style.display = none;
+    }
+  }
+  </script> 
+  
+  
+</body>
+
+</html>
